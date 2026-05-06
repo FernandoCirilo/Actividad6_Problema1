@@ -1,4 +1,8 @@
 package Problema1.fabricaDeRopa;
+import Problema1.excepciones.ExcepcionDeCostoFueraDeLimite;
+import Problema1.excepciones.ExcepcionDeGeneroInvalido;
+import Problema1.excepciones.ExcepcionDeTemporadaInvalida;
+
 import java.util.Objects;
 import java.util.Comparator;
 
@@ -8,8 +12,22 @@ public class Prenda implements Comparable<Prenda> {
     private float costoProduccion;
     private String genero;
     private String temporada;
+    private float costoMaximo;
 
-    public Prenda(String modelo, String tela, float costoProduccion, String genero, String temporada){
+    public Prenda(String modelo, String tela, float costoProduccion, String genero, String temporada, float costoMaximo)
+            throws ExcepcionDeGeneroInvalido, ExcepcionDeTemporadaInvalida, ExcepcionDeCostoFueraDeLimite {
+
+        if(!genero.equals("Masculino") && !genero.equals("Femenino") && !genero.equals("Mixto"))
+            throw new ExcepcionDeGeneroInvalido("Género inválido: " + genero);
+
+        if(!temporada.equals("Primavera") && !temporada.equals("Verano")
+                && !temporada.equals("Otoño") && !temporada.equals("Invierno"))
+            throw new ExcepcionDeTemporadaInvalida("Temporada inválida: " + temporada);
+
+        if(costoProduccion > costoMaximo)
+            throw new ExcepcionDeCostoFueraDeLimite("El costo supera el límite de " + costoMaximo);
+
+        this.costoMaximo = costoMaximo;
         this.modelo = modelo;
         this.tela = tela;
         this.costoProduccion = costoProduccion;

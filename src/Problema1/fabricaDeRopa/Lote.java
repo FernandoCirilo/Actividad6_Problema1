@@ -1,5 +1,7 @@
 package Problema1.fabricaDeRopa;
 
+import Problema1.excepciones.ExcepcionDeNumeroDePiezasInvalido;
+
 import java.time.LocalDate;
 import java.util.Objects;
 import java.util.Comparator;
@@ -10,7 +12,13 @@ public class Lote implements Comparable<Lote>{
     private LocalDate fechaFabricacion;
     private Prenda prendaLote;
 
-    public Lote(int numeroLote, int numeroPieza, LocalDate fechaFabricacion, Prenda prendaLote) {
+    private static final int PIEZAS_MINIMAS = 50;
+    private static final int PIEZAS_MAXIMAS = 350;
+
+    public Lote(int numeroLote, int numeroPieza, LocalDate fechaFabricacion, Prenda prendaLote)
+    throws ExcepcionDeNumeroDePiezasInvalido {
+        if(numeroPieza < PIEZAS_MINIMAS || numeroPieza > PIEZAS_MAXIMAS)
+            throw new ExcepcionDeNumeroDePiezasInvalido("El número de piezas debe estar entre 50 y 350");
         this.numeroLote = numeroLote;
         this.numeroPieza = numeroPieza;
         this.fechaFabricacion = fechaFabricacion;

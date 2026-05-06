@@ -1,16 +1,57 @@
-package Problema1.fabricaDeRopa;
+package Problema1.main;
+
+import Problema1.coleccion.Fabrica;
+import Problema1.excepciones.ExcepcionDeCostoFueraDeLimite;
+import Problema1.excepciones.ExcepcionDeGeneroInvalido;
+import Problema1.excepciones.ExcepcionDeNumeroDePiezasInvalido;
+import Problema1.excepciones.ExcepcionDeTemporadaInvalida;
+import Problema1.fabricaDeRopa.Lote;
+import Problema1.fabricaDeRopa.Prenda;
 
 import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args){
-        /*Prenda prenda1 = new Prenda("Casual", "Algodón", 101.0f, "Masculino", "Invierno");
-        Prenda prenda2 = new Prenda("Casual", "Algodón", 100.0f, "Masculino", "Invierno");
-        Prenda prenda3 = new Prenda("Casual", "Poliester", 100.0f, "Femenino", "Verano");
+        Fabrica fabrica = new Fabrica("Textiles del Sur");
+        Prenda prenda1= null;
+        Prenda prenda2= null;
+        Prenda prenda3= null;
+        Lote lote1=null;
+        Lote lote2=null;
+        Lote lote3=null;
 
-        Lote lote1 = new Lote(1, 20, LocalDate.of(2026,11,5), prenda1);
-        Lote lote2 = new Lote(2, 20, LocalDate.of(2026, 11,20), prenda2);
-        Lote lote3 = new Lote(1, 20, LocalDate.of(2026,11,5), prenda1);
+
+        try {
+            prenda1 = new Prenda("Casual", "Algodón", 101f, "Masculino", "Invierno", 200f);
+            prenda2 = new Prenda("Sport",  "Poliéster", 80f, "Mixto",    "Verano",   200f);
+            prenda3 = new Prenda("Casual", "Poliester", 100.0f, "Femenino", "Verano", 200f);
+            lote1 = new Lote(1, 100, LocalDate.of(2026,11,5), prenda1);
+            lote2 = new Lote(2,  200, LocalDate.of(2026,11,5), prenda2);
+            lote3 = new Lote(1, 200, LocalDate.of(2026,11,5), prenda1);
+
+            fabrica.agregaPrenda(prenda1); // si llega aquí, ya es válida
+            fabrica.agregaPrenda(prenda2);
+            fabrica.agregaPrenda(prenda3);
+            fabrica.agregaLote(lote1);
+            fabrica.agregaLote(lote2);
+            fabrica.agregaLote(lote3);
+
+           // System.out.println(p1);
+        } catch (ExcepcionDeGeneroInvalido e) {
+            System.err.println(e.getMessage());
+        } catch (ExcepcionDeTemporadaInvalida e) {
+            System.err.println(e.getMessage());
+        } catch (ExcepcionDeCostoFueraDeLimite e) {
+            System.err.println(e.getMessage());
+        } catch (ExcepcionDeNumeroDePiezasInvalido e) {
+            System.err.println(e.getMessage());
+        }
+        int a;
+        a = fabrica.cantidadDeLotes();
+        System.out.println(a);
+        int b;
+        b = fabrica.cantidadDePrendas();
+        System.out.println(b);
 
 
         System.out.println(prenda1);
@@ -74,6 +115,6 @@ public class Main {
         System.out.println("Comparando por fecha lote1 y lote2:");
         System.out.println(new Lote.ComparadorPorFecha().compare(lote1, lote2));
 
-         */
+
     }
 }
