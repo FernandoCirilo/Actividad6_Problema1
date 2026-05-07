@@ -92,4 +92,14 @@ public class Lote implements Comparable<Lote>{
         gananciaVenta = precioPrendaLote * numeroPieza;
         return gananciaVenta;
     }
+
+    @Override
+    public String toString() {
+        return "Lote{" +
+                "numeroLote=" + numeroLote +
+                ", numeroPieza=" + numeroPieza +
+                ", fechaFabricacion=" + fechaFabricacion +
+                ",\nprendaLote=" + prendaLote +
+                '}';
+    }
 }

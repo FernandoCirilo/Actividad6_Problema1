@@ -36,7 +36,6 @@ public class Main {
             fabrica.agregaLote(lote2);
             fabrica.agregaLote(lote3);
 
-           // System.out.println(p1);
         } catch (ExcepcionDeGeneroInvalido e) {
             System.err.println(e.getMessage());
         } catch (ExcepcionDeTemporadaInvalida e) {
@@ -46,14 +45,10 @@ public class Main {
         } catch (ExcepcionDeNumeroDePiezasInvalido e) {
             System.err.println(e.getMessage());
         }
-        int a;
-        a = fabrica.cantidadDeLotes();
-        System.out.println(a);
-        int b;
-        b = fabrica.cantidadDePrendas();
-        System.out.println(b);
+        fabrica.mostrarPrendas();
+        fabrica.mostrarLotes();
 
-
+        System.out.println();
         System.out.println(prenda1);
 
         float precioVentaPieza = lote1.getCalcularPrecioVentaPieza();

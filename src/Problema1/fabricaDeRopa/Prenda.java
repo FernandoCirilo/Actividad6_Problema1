@@ -94,6 +94,7 @@ public class Prenda implements Comparable<Prenda> {
                 ", costoProduccion=" + costoProduccion +
                 ", genero='" + genero +
                 ", temporada='" + temporada +
+                ", costoMaximo=" + costoMaximo +
                 '}';
     }
 }

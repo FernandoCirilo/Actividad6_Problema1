@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65a8d55d-0d60-43e3-87e7-ed342868cab1" name="Changes" comment="">
+    <list default="true" id="65a8d55d-0d60-43e3-87e7-ed342868cab1" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Problema1/coleccion/Fabrica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problema1/coleccion/Fabrica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Problema1/excepciones/ExcepcionDeCostoFueraDeLimite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problema1/excepciones/ExcepcionDeCostoFueraDeLimite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Problema1/excepciones/ExcepcionDeGeneroInvalido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problema1/excepciones/ExcepcionDeGeneroInvalido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Problema1/excepciones/ExcepcionDeNumeroDePiezasInvalido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problema1/excepciones/ExcepcionDeNumeroDePiezasInvalido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Problema1/excepciones/ExcepcionDeTemporadaInvalida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problema1/excepciones/ExcepcionDeTemporadaInvalida.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Problema1/fabricaDeRopa/Lote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problema1/fabricaDeRopa/Lote.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Problema1/fabricaDeRopa/Prenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problema1/fabricaDeRopa/Prenda.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Problema1/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problema1/main/Main.java" afterDir="false" />
@@ -30,18 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "FernandoCirilo"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;FernandoCirilo&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/FernandoCirilo/Actividad6_Problema1.git",
-    "accountId": "011a9901-ad37-4351-b4e7-d801fc19f45f"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/FernandoCirilo/Actividad6_Problema1.git&quot;,
+    &quot;accountId&quot;: &quot;011a9901-ad37-4351-b4e7-d801fc19f45f&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -63,6 +60,26 @@
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Problema1.main.Main" />
+      <module name="Actividad6_Problema1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Problema1.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -78,6 +95,19 @@
       <option name="presentableId" value="Default" />
       <updated>1778043767556</updated>
     </task>
+    <task id="LOCAL-00001" summary=".">
+      <option name="closed" value="true" />
+      <created>1778108525279</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1778108525279</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
